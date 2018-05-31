@@ -1,4 +1,3 @@
-//teting
 //Do this as soon as the DOM is ready
 $(document).ready(function() {
     //$("wantaclue").hide();
