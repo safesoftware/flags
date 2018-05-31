@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+
+  </style><!-- Safe Software, 2015 -->
+  <!-- http://www.safe.com -->
+
+  <title>Fun with Flags</title>
+  <!-- JQuery -->
+  <script src="libs/jquery-1.10.1.js"></script><!-- Bootstrap -->
+  <!--http://getbootstrap.com/2.3.2/-->
+  <script src="libs/bootstrap/js/bootstrap.js"></script>
+  <link href="libs/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="libs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"><!-- Google Maps -->
+<!-- Stylesheet for demo/tutorial -->
+  <link href="css/index.css" rel="stylesheet"><!-- Upload Library -->
+  <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+  <script src="libs/upload/js/vendor/jquery.ui.widget.js"></script>
+
+  <!-- flag demo JS -->
+
+  <script src="./js/flags.js" type="text/javascript"></script>
+</head>
+  <!-- flag demo JS -->
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse"><span class=
+        "icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></a>
+
+        <div class="brand">
+          FME Server <span class="hidden-tiny">Demos</span>
+        </div>
+
+        <div class="nav-collapse collapse">
+          <!--<a class="btn" href="https://github.com/safesoftware/fmepedia-validation"><img alt=
+          "GitHub link" src="libs/github.png"> Fork GitHub</a> <a class="btn" href=
+          "https://github.com/safesoftware/fmepedia-validation/archive/master.zip"><i class=
+          "icon-download-alt"></i> Download Zip</a>-->
+        </div><span class="hidden-phone" id="safe-ribbon"><a href="http://www.safe.com">Powered by
+        FME</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="page-header">
+          <div><h1>Fun with Flags </h1></div>
+          <div><small><br><h4>Play the FME World Tour 2018 Fun with Flags game online!</h4></small></div>
+        <br>
+          <div><h3 id="intro" class="lead">This is a game to test your knowledge of flags and geography! You will be shown 7 flags from the CIA website. You have to guess which country they belong to. As this game is hard, we'll provide a clue in the form of a map.</h3><br></div>
+    </div>
+     </div>
+     <div class="container">
+      <div><div><button id="flagRequest"><input type="text" class="form-control" placeholder="How many flags would you like?" id="flagRequestInput" name="flagRequestInput" width="30" value="">&emsp;<input type="button" value="Play" onclick="getFlags()" class="btn btn-default"></button> </div></div>
+        <div><h1 id="flagNo"></h1></div><br>
+        <div><h2 id="endResults"></h2><br></div><br>
+        <div><h4 id="playAgain"></h4><br></div><br> 
+        <p><button id="playAgainBtn" class="btn btn-default" onclick="playAgain()">Play again</button></p>
+      
+      <div class="container" id="gameContainer">
+         <div class="row">
+             <div class="span6">                                     
+                 <h5 id="flagclue">Which country is this?</h5>
+                 <img class="img-responsive" id="flagimage"/>
+                 </div>
+                 <div class="span6">                                     
+                 <h5 id="imageclue">Want a clue?</h5>
+                 <img class="img-responsive" id="clueimage"/>
+                 </div>
+      </div>                  
+</div>
+     
+      <br>
+      <div><button id="countrySearch"><input type="text" class="form-control" id="idSearch" name="idSearch" width="30" placeholder="Enter country">&emsp;<input type="button" value="Check your answer" onclick="validateCountry()" class="btn btn-default"></button> </div>  
+              <h4 id="guessStatus"></h4>            
+                
+                <br>
+                <br>          
+            <p><button id="nextFlag" class="btn btn-default" onclick="getNextFlag()">Next Flag</button></p>
+    </div>
+</body>
+</html>
