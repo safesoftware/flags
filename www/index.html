@@ -59,7 +59,7 @@
     </div>
      </div>
      <div class="container">
-      <div><div><button id="flagRequest"><input type="text" class="form-control" placeholder="How many flags would you like?" id="flagRequestInput" name="flagRequestInput" width="30" value="">&emsp;<input type="button" value="Play" onclick="getFlags()" class="btn btn-default"></button> </div></div>
+      <input type="text" class="form-control" placeholder="How many flags would you like?" id="flagRequestInput" name="flagRequestInput" width="30" value="">&emsp;<input id="flagRequest" type="button" value="Play" onclick="getFlags()" class="btn btn-default">
         <div><h1 id="flagNo"></h1></div><br>
         <div><h2 id="endResults"></h2><br></div><br>
         <div><h4 id="playAgain"></h4><br></div><br> 
@@ -79,7 +79,7 @@
 </div>
      
       <br>
-      <div><button id="countrySearch"><input type="text" class="form-control" id="idSearch" name="idSearch" width="30" placeholder="Enter country">&emsp;<input type="button" value="Check your answer" onclick="validateCountry()" class="btn btn-default"></button> </div>  
+      <input type="text" class="form-control" id="idSearch" name="idSearch" width="30" placeholder="Enter country">&emsp;<input id="countrySearch" type="button" value="Check your answer" onclick="validateCountry()" class="btn btn-default">
               <h4 id="guessStatus"></h4>            
                 
                 <br>
